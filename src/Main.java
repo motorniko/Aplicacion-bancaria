@@ -31,7 +31,7 @@ public class Main {
 
                 case 2:
                     System.out.print("Ingrese la cantidad a retirar: ");
-                    int retiro = scanner.nextInt();
+                    double retiro = scanner.nextDouble();
                     if (retiro > saldo) {
                         System.out.println("Saldo insuficiente.");
                     } else {
@@ -42,7 +42,7 @@ public class Main {
 
                 case 3:
                     System.out.print("Ingrese la cantidad a depositar: ");
-                    int deposito = scanner.nextInt();
+                    double deposito = scanner.nextDouble();
                     saldo += deposito;
                     System.out.println("Depósito exitoso. Saldo disponible: " + saldo + " $");
                     break;
