@@ -12,21 +12,21 @@ public class Main {
 
         System.out.println("NOMBRE CLIENTE: TONY STARK");
         System.out.println("TIPO DE CUENTA: CORRIENTE");
-        System.out.println("SALDO DISPONIBLE: " + saldo);
+        System.out.println("SALDO DISPONIBLE: " + saldo + " $");
         System.out.println("------------------------------------");
 
-        while (opcion != 4) {
+        while (opcion != 9) {
             System.out.println("1. Consultar saldo");
             System.out.println("2. Retirar dinero");
             System.out.println("3. Depositar dinero");
-            System.out.println("4. Salir");
+            System.out.println("9. Salir");
             System.out.print("Ingrese la opción deseada: ");
             opcion = scanner.nextInt();
             System.out.println("------------------------------------");
 
             switch (opcion) {
                 case 1:
-                    System.out.println("Saldo disponible: " + saldo);
+                    System.out.println("Saldo disponible: " + saldo + " $");
                     break;
 
                 case 2:
@@ -36,7 +36,7 @@ public class Main {
                         System.out.println("Saldo insuficiente.");
                     } else {
                         saldo -= retiro;
-                        System.out.println("Retiro exitoso. Saldo disponible: " + saldo);
+                        System.out.println("Retiro exitoso. Saldo disponible: " + saldo + " $");
                     }
                     break;
 
@@ -44,10 +44,10 @@ public class Main {
                     System.out.print("Ingrese la cantidad a depositar: ");
                     int deposito = scanner.nextInt();
                     saldo += deposito;
-                    System.out.println("Depósito exitoso. Saldo disponible: " + saldo);
+                    System.out.println("Depósito exitoso. Saldo disponible: " + saldo + " $");
                     break;
 
-                case 4:
+                case 9:
                     System.out.println("Gracias por utilizar BANCO - HIGH CLASS.");
                     break;
 
